@@ -10,8 +10,16 @@ const RootStack = createNativeStackNavigator<RootStackParamList>();
 export const RootNavigation = () => {
   return (
     <RootStack.Navigator>
-      <RootStack.Screen name="Home" component={Home} />
-      <RootStack.Screen name="Statistics" component={Statistics} />
+      <RootStack.Screen
+        name="Home"
+        component={Home}
+        options={{headerTitleAlign: 'center'}}
+      />
+      <RootStack.Screen
+        name="Statistics"
+        component={Statistics}
+        options={{headerTitleAlign: 'center'}}
+      />
     </RootStack.Navigator>
   );
 };
