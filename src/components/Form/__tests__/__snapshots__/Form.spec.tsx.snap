@@ -98,7 +98,7 @@ Array [
     <Text
       style={
         Object {
-          "color": "red",
+          "color": "#EE2345",
         }
       }
     >
