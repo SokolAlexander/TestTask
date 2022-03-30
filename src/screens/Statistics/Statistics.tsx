@@ -3,6 +3,7 @@ import {Text, View} from 'react-native';
 import {useSelector} from 'react-redux';
 
 import {selectCountFemale, selectHistory} from '../../store/names/selectors';
+import {getMostPopular} from '../../utils/getMostPopular';
 import {statStyle} from './Statistics.styles';
 
 export const Statistics = () => {
@@ -12,19 +13,10 @@ export const Statistics = () => {
   const total = Object.keys(history).length;
   const femalePercent = total && +((countFemale / total) * 100).toFixed(3);
 
-  const [mostPopularName, mostPopularCount] = useMemo(() => {
-    const entries = Object.entries(history);
-    if (!entries.length) {
-      return [];
-    }
-    return entries.reduce((acc, entry) => {
-      if (entry[1] > acc[1]) {
-        return entry;
-      }
-
-      return acc;
-    }, entries[0]);
-  }, [history]);
+  const [mostPopularName, mostPopularCount] = useMemo(
+    () => getMostPopular(history),
+    [history],
+  );
 
   return (
     <View style={statStyle.wrapper}>

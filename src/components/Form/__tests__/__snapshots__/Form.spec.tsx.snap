@@ -1,0 +1,225 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Form matches snapshot with default state 1`] = `
+Array [
+  <TextInput
+    onChangeText={[Function]}
+    placeholder="Enter a name"
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#141513",
+        "borderWidth": 1,
+        "marginVertical": 10,
+        "paddingHorizontal": 15,
+        "paddingVertical": 10,
+      }
+    }
+    value=""
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "minHeight": 30,
+      }
+    }
+  />,
+  <View
+    accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#EDEDED",
+        "borderColor": "#DDD",
+        "borderWidth": 2,
+        "justifyContent": "center",
+        "marginHorizontal": 25,
+        "marginTop": 10,
+        "opacity": 1,
+        "padding": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#141513",
+          "fontSize": 18,
+        }
+      }
+    >
+      Get Gender
+    </Text>
+  </View>,
+]
+`;
+
+exports[`Form matches snapshot with request error state 1`] = `
+Array [
+  <TextInput
+    onChangeText={[Function]}
+    placeholder="Enter a name"
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#141513",
+        "borderWidth": 1,
+        "marginVertical": 10,
+        "paddingHorizontal": 15,
+        "paddingVertical": 10,
+      }
+    }
+    value=""
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "minHeight": 30,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "red",
+        }
+      }
+    >
+      Test error
+    </Text>
+  </View>,
+  <View
+    accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#EDEDED",
+        "borderColor": "#DDD",
+        "borderWidth": 2,
+        "justifyContent": "center",
+        "marginHorizontal": 25,
+        "marginTop": 10,
+        "opacity": 1,
+        "padding": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#141513",
+          "fontSize": 18,
+        }
+      }
+    >
+      Get Gender
+    </Text>
+  </View>,
+]
+`;
+
+exports[`Form matches snapshot with request pending state 1`] = `
+Array [
+  <TextInput
+    onChangeText={[Function]}
+    placeholder="Enter a name"
+    style={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#141513",
+        "borderWidth": 1,
+        "marginVertical": 10,
+        "paddingHorizontal": 15,
+        "paddingVertical": 10,
+      }
+    }
+    value=""
+  />,
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "minHeight": 30,
+      }
+    }
+  >
+    <ActivityIndicator
+      color="black"
+    />
+  </View>,
+  <View
+    accessibilityRole="button"
+    accessibilityState={
+      Object {
+        "disabled": true,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#EDEDED",
+        "borderColor": "#DDD",
+        "borderWidth": 2,
+        "justifyContent": "center",
+        "marginHorizontal": 25,
+        "marginTop": 10,
+        "opacity": 1,
+        "padding": 15,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "color": "#141513",
+          "fontSize": 18,
+        }
+      }
+    >
+      Get Gender
+    </Text>
+  </View>,
+]
+`;

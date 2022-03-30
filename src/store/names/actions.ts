@@ -1,4 +1,5 @@
 import {Dispatch} from 'redux';
+import {API_URL} from '../../utils/constants';
 import {
   GenderData,
   GetGenderFailure,
@@ -28,7 +29,7 @@ export const getGender = (name: string) => async (dispatch: Dispatch) => {
   try {
     dispatch(getGenderRequest());
 
-    const response = await fetch(`https://api.genderize.io?name=${name}`);
+    const response = await fetch(`${API_URL}${name}`);
     const result = await response.json();
 
     if (!result.gender) {

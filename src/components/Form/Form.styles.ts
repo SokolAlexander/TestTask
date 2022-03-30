@@ -19,7 +19,7 @@ export const formStyles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   error: {
-    color: 'red',
+    color: colors.red,
   },
   statusWrapper: {
     alignItems: 'center',

@@ -15,7 +15,10 @@ export const Home = ({navigation}: HomeProps) => {
     <SafeAreaView style={homeStyles.safeArea} edges={['bottom']}>
       <View style={homeStyles.wrapper}>
         <Form />
-        <TouchableOpacity style={homeStyles.button} onPress={goToStats}>
+        <TouchableOpacity
+          accessibilityRole="button"
+          style={homeStyles.button}
+          onPress={goToStats}>
           <Text style={homeStyles.btnText}>To Statistics</Text>
         </TouchableOpacity>
       </View>

@@ -55,6 +55,7 @@ export const Form = () => {
         )}
       </View>
       <TouchableOpacity
+        accessibilityRole="button"
         disabled={btnDisabled}
         style={[formStyles.button, btnDisabled && formStyles.buttonDisabled]}
         onPress={handlePress}>
